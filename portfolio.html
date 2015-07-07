@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>UBS Winners' Website</title>
 
     <!-- Bootstrap -->
 
@@ -29,7 +29,7 @@
   </head>
 	
   <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -48,6 +48,7 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="livedata.html">Live Data</a></li>
         <li><a href="messaging.html">Messaging</a></li>
+        <li><a href="proposal.html">Proposals</a></li>
         <li><a href="settings.html">Settings</a></li>
           </ul>
         </li>
@@ -75,27 +76,36 @@ td{
 </style>
 	<div class="container">
 		<a href="#"><img src="http://b20turkey.org/wp-content/uploads/2014/12/PDF-Icon.jpg" style="max-width:25px;max-height:25px;float:right;"></a>
-		<center><img src="http://ted.coe.wayne.edu/sse/wq/getzen/InvestmentPieChart3.jpg" style="max-width:100%;"></center>
+		<center>
+			<!-- <h2>My Portfolio</h2> -->
+			<img src="http://ted.coe.wayne.edu/sse/wq/getzen/InvestmentPieChart3.jpg" style="max-width:100%;">
+		</center>
 		<div class="accordion">
-		  <h3>Equities</h3>
+		  <h3>Stocks</h3>
 		  <div>
 			<table>
-				<tr><th>Security Name</th><th>Percentage Change</th><th>Current Value</th></tr>
-				<tr><td>Google</td><td><font color="green">$5,000,000</td></tr>
-			</table>
+				<tr><th>Stock Name</th><th>Last</th><th>Current</th><th>Change</th></tr>
+					<tr><td><a href="data/stocks/StarBucks.html">Starbucks Corporation</a></td><td>53.14 USD</td><td>53.89 USD</td><td><font color="green">+0.21 (+0.38%)</font></td></tr>
+					<tr><td><a href="data/stocks/McDonalds.html">McDonald's Corp</a></td><td>500 USD</td><td>473 USD</td><td><font color="green">$27 (+0.05%)</font></td></tr>
+					<tr><td><a href="data/stocks/Johnson&Johnson">Johnson & Johnson</a></td><td>108.97 USD</td><td>101.17 USD</td><td><font color="green">$7.80 (+1.5%)</font></td></tr>
+					<tr><td><a href="data/stocks/P&G.html">Procter & Gamble Company</a></td><td>3.55 USD</td><td>2.66 USD</td><td><font color="red">$0.89 (-0.33%)</font></td></tr>
+				</table>
 		  </div>
-		  <h3>Bonds</h3>
+		  <h3>Indexes</h3>
 		  <div>
 			<table>
-				<tr><th>Security Name</th><th>Percentage Change</th><th>Current Value</th></tr>
+				<tr><th>Indexes</th><th>Last</th><th>Current</th><th>Change</th></tr>
 				<tr><td>Google</td><td><font color="green">$5,000,000</td></tr>
 			</table>
 		  </div>
 		  <h3>FX Rates</h3>
 		  <div>
 				<table>
-					<tr><th>Currency Pair</th><th>Current Value</th><th>Exchange Rate</th></tr>
-					<tr><td>USD/AUD</td><td><font color="green">USD 5,000,000 (+0.37%)</font></td><td>1.02</td></tr>
+					<tr><th>Currency Pair</th><th>Last</th><th>Current</th><th>Change</th></tr>
+					<tr><td>USD/AUD</td><td>1.02</td><td>1.02</td><td><font color="green">USD 5,000,000 (+0.37%)</font></td></tr>
+					<tr><td>USD/CNY</td><td>1.02</td><td>1.02</td><td><font color="green">USD 5,000,000 (+0.37%)</font></td></tr>
+					<tr><td>USD/EUR</td><td>0.90187</td><td>0.89955</td><td><font color="red"> -0.00232(-0.026%)</font></td></tr>
+					<tr><td>USD/GBP</td><td>0.63937</td><td>0.64225</td><td><font color="green"> (+0.37%)</font></td></tr>
 				</table>
 		  </div>
 		  <h3>Commodities</h3>
@@ -105,7 +115,7 @@ td{
 					<h3>Base Metals</h3>
 					<div>
 						<table>
-							<tr><th>Metal</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><th>Metal</th><th>Last</th><th>Current</th><th>Change</th></tr>
 							<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>5,000 mt</td><td><font color="green">$198,374(+5%)</font></td></tr>
 							<tr><td><a href="data/base_metals/zinc.html">Zinc</a></td><td>5,000 mt</td><td><font color="green">$2,734,078(+5%)</font></td></tr>
 							<tr><td><a href="data/base_metals/tin.html">Tin</a></td><td>5,000 mt</td><td><font color="green">$12,342(+5%)</font></td></tr>
@@ -114,7 +124,7 @@ td{
 					<h3>Rare Metals</h3>
 					<div>
 						<table>
-							<tr><th>Metal</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><th>Metal</th><th>Last</th><th>Current</th><th>Change</th></tr>
 							<tr><td><a href="data/rare_metals/gold.html">Gold</a></td><td>5,000 mt</td><td><font color="green">$2,135,134(+5%)</td></tr>
 							<tr><td><a href="data/rare_metals/silver.html">Silver</a></td><td>5,000 mt</td><td><font color="green">$453,153(+5%)</td></tr>
 							<tr><td><a href="data/rare_metals/titanium.html">Titanium</a></td><td>5,000 mt</td><td><font color="green">$1,531,434(+5%)</td></tr>
@@ -123,7 +133,7 @@ td{
 					<h3>Energy</h3>
 					<div>
 						<table>
-							<tr><th>Energy</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><th>Energy</th><th>Last</th><th>Current</th><th>Change</th></tr>
 							<tr><td><a href="data/energy/crude_oil.html">Crude Oil</a></td><td>5,000 mt</td><td><font color="green">$1,123,415(+5%)</td></tr>
 							<tr><td><a href="data/energy/petroleum.html">Petroleum</a></td><td>5,000 mt</td><td><font color="green">$1,234,125(+5%)</td></tr>
 						</table>
@@ -131,7 +141,7 @@ td{
 					<h3>Fertilizers</h3>
 					<div>
 						<table>
-							<tr><th>Fertilizer</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><th>Petrochemicals</th><th>Last</th><th>Current</th><th>Change</th></tr>
 							<tr><td><a href="data/fertilizers/sulphur.html">Sulphur</a></td><td>5,000 mt</td><td><font color="green">$100(+5%)</td></tr>
 							<tr><td><a href="data/fertilizers/ammonia.html">Ammonia</a></td><td>5,000 mt</td><td><font color="green">$10(+5%)</td></tr>
 						</table>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>UBS Winners' Website</title>
 
     <!-- Bootstrap -->
 
@@ -25,10 +25,18 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
+	    
+    <!-- Substantially simplified and improved version of the table on
+    http://www.cssbakery.com/2010/12/css-scrolling-tables-with-fixed.html -->
+    
+    
+	
+	
   </head>
 	
   <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -47,6 +55,7 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="livedata.html">Live Data</a></li>
         <li><a href="messaging.html">Messaging</a></li>
+		<li><a href="proposal.html">Proposals</a></li>
         <li><a href="settings.html">Settings</a></li>
           </ul>
         </li>
@@ -68,26 +77,144 @@ table{
 td{
 	padding:5px;
 }
+
+.scroll {
+    max-height: 60px;
+    overflow: auto;
+}
+
+
 </style>
 	<div class="container">
+		<div class="container">	
+			<div style="float:left">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active" id="One-link"><a href="#">Watchlist</a></li>       
+					<li id="Two-link"><a href="#">Top Gainers</a></li>
+					<li id="Three-link"><a href="#">Top Losers</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="tab-content" style="padding-top:5px;">
+			<div id="One-content">
+				<br />
+				<div class="scroll">
+				<table>
+				<tr><th>Trading type</th><th>Price</th><th>Change</th><th>% Change</th></tr>
+				<tr><td><a href="data/stocks/StarBucks.html">Starbucks</td><td>19.15</td><td><font color="red">-0.19</font></td><td><font color="red">-0.98%</font></td></tr>
+				<tr><td>Krispy Kreme Doughnuts</td><td>19.15</td><td><font color="red">-0.19</font></td><td><font color="red">-0.98%</font></td></tr>
+				<tr><td>Wal-Mart Stores Inc.</td><td>71.85</td><td><font color="red">-0.03</font></td><td><font color="red">-0.0412%</font></td></tr>
+				<tr><td>COMEX Copper</td><td>2.6345</td><td><font color="red">-0.0135</font></td><td><font color="red">-0.0513%</font></td></tr>
+				</table>
+				</div>
+			</div>
+			
+		</div>
+	
 		<div class="accordion">
-		  <h3>Equities</h3>
+		<h3>My Assets</h3>
 		  <div>
-			<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+			
+				<div class="accordion">
+					<h3>Top Gainers</h3>
+					<div>
+						<table>
+							<tr><th>Trading Type</th><th>Last</th><th>Change</th></tr>
+							<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+							<tr><td><a href="data/base_metals/AppleInc.html">AppleInc</a></td><td>843 USD</td><td><font color="green">$109.96 (+1.5%)</font></td></tr>
+							<tr><td><a href="data/base_metals/StarBucks.html">SBUX</a></td><td>53.89 USD</td><td><font color="green">$152.35 (+0.33%)</font></td></tr>
+						</table>
+					</div>
+					<h3>Top Losers</h3>
+					<div>
+						<table>
+							<tr><th>Trading Type</th><th>Last</th><th>Change</th></tr>
+							<tr><td><a href="data/rare_metals/gold.html">Gold</a></td><td>5,000 mt</td><td><font color="red">$45.57 (-0.05%)</td></tr>
+							<tr><td><a href="data/rare_metals/silver.html">Silver</a></td><td>5,000 mt</td><td><font color="red">$$109.96 (-1.5%)</td></tr>
+							<tr><td><a href="data/rare_metals/titanium.html">Titanium</a></td><td>5,000 mt</td><td><font color="red">$152.35 (-0.33%)</td></tr>
+						</table>
+					</div>
+					<h3>Stocks</h3>
+					<div>
+						<table>
+							<tr><th>Energy</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><td><a href="data/energy/crude_oil.html">Crude Oil</a></td><td>5,000 mt</td><td><font color="green">$1,123,415(+5%)</td></tr>
+							<tr><td><a href="data/energy/petroleum.html">Petroleum</a></td><td>5,000 mt</td><td><font color="green">$1,234,125(+5%)</td></tr>
+						</table>
+					</div>
+					<h3>FX Rate</h3>
+					<div>
+						<table>
+							<tr><th>Fertilizer</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><td><a href="data/fertilizers/sulphur.html">Sulphur</a></td><td>5,000 mt</td><td><font color="green">$100(+5%)</td></tr>
+							<tr><td><a href="data/fertilizers/ammonia.html">Ammonia</a></td><td>5,000 mt</td><td><font color="green">$10(+5%)</td></tr>
+						</table>
+					</div>
+				</div>
 		  </div>
-		  <h3>Bonds</h3>
+		  
+		  
+		  
+		  <h3>Stocks</h3>
 		  <div>
-			<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-			<ul>
-			  <li>List item one</li>
-			  <li>List item two</li>
-			  <li>List item three</li>
-			</ul>
+			
+				<div class="accordion">
+					<h3>Top Gainers</h3>
+					<div>
+						<table>
+							<tr><th>Security Name</th><th>Last</th><th>Change</th></tr>
+							<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+							<tr><td><a href="data/base_metals/zinc.html">Zinc</a></td><td>843 USD</td><td><font color="green">$109.96 (+1.5%)</font></td></tr>
+							<tr><td><a href="data/base_metals/tin.html">Tin</a></td><td>614 USD</td><td><font color="green">$152.35 (+0.33%)</font></td></tr>
+						</table>
+					</div>
+					<h3>Top Losers</h3>
+					<div>
+						<table>
+							<tr><th>Metal</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><td><a href="data/rare_metals/gold.html">Gold</a></td><td>5,000 mt</td><td><font color="red">$45.57 (-0.05%)</td></tr>
+							<tr><td><a href="data/rare_metals/silver.html">Silver</a></td><td>5,000 mt</td><td><font color="red">$$109.96 (-1.5%)</td></tr>
+							<tr><td><a href="data/rare_metals/titanium.html">Titanium</a></td><td>5,000 mt</td><td><font color="red">$152.35 (-0.33%)</td></tr>
+						</table>
+					</div>
+					<h3>Energy</h3>
+					<div>
+						<table>
+							<tr><th>Energy</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><td><a href="data/energy/crude_oil.html">Crude Oil</a></td><td>5,000 mt</td><td><font color="green">$1,123,415(+5%)</td></tr>
+							<tr><td><a href="data/energy/petroleum.html">Petroleum</a></td><td>5,000 mt</td><td><font color="green">$1,234,125(+5%)</td></tr>
+						</table>
+					</div>
+					<h3>Fertilizers</h3>
+					<div>
+						<table>
+							<tr><th>Fertilizer</th><th>Amount</th><th>Current Value</th></tr>
+							<tr><td><a href="data/fertilizers/sulphur.html">Sulphur</a></td><td>5,000 mt</td><td><font color="green">$100(+5%)</td></tr>
+							<tr><td><a href="data/fertilizers/ammonia.html">Ammonia</a></td><td>5,000 mt</td><td><font color="green">$10(+5%)</td></tr>
+						</table>
+					</div>
+				</div>
+				
 		  </div>
-		  <h3>FX Rates</h3>
+		  <h3>Indexes</h3>
 		  <div>
 				<table>
-					<tr><td>USD/AUD</td><td>1</td></tr>
+					<tr><th>Indexes</th><th>Last</th><th>Change</th></tr>
+					<tr><td><a href="data/base_metals/copper.html">DJIA</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+					<tr><td><a href="data/base_metals/copper.html">NASDAQ</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+					<tr><td><a href="data/base_metals/zinc.html">S&P 500</a></td><td>843 USD</td><td><font color="green">$109.96 (+1.5%)</font></td></tr>
+					<tr><td><a href="data/base_metals/tin.html">FTSE 100</a></td><td>614 USD</td><td><font color="red">$152.35 (-0.33%)</font></td></tr>
+				</table>
+		  </div>
+		  <h3>FX Rate</h3>
+		  <div>
+				<table>
+					<tr><th>Currency Name</th><th>Last</th><th>Change</th></tr>
+					<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+					<tr><td><a href="data/base_metals/zinc.html">Zinc</a></td><td>843 USD</td><td><font color="green">$109.96 (+1.5%)</font></td></tr>
+					<tr><td><a href="data/base_metals/tin.html">Tin</a></td><td>614 USD</td><td><font color="red">$152.35 (-0.33%)</font></td></tr>
+				
 				</table>
 		  </div>
 		  <h3>Commodities</h3>
@@ -97,10 +224,10 @@ td{
 					<h3>Base Metals</h3>
 					<div>
 						<table>
-							<tr><th>Metal</th><th>Amount</th><th>Current Value</th></tr>
-							<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>5,000 mt</td><td><font color="green">$198,374(+5%)</font></td></tr>
-							<tr><td><a href="data/base_metals/zinc.html">Zinc</a></td><td>5,000 mt</td><td><font color="green">$2,734,078(+5%)</font></td></tr>
-							<tr><td><a href="data/base_metals/tin.html">Tin</a></td><td>5,000 mt</td><td><font color="green">$12,342(+5%)</font></td></tr>
+							<tr><th>Security Name</th><th>Last</th><th>Change</th></tr>
+							<tr><td><a href="data/base_metals/copper.html">Copper</a></td><td>957 USD</td><td><font color="green">$45.57 (+0.05%)</font></td></tr>
+							<tr><td><a href="data/base_metals/zinc.html">Zinc</a></td><td>843 USD</td><td><font color="green">$109.96 (+1.5%)</font></td></tr>
+							<tr><td><a href="data/base_metals/tin.html">Tin</a></td><td>614 USD</td><td><font color="red">$152.35 (-0.33%)</font></td></tr>
 						</table>
 					</div>
 					<h3>Rare Metals</h3>
@@ -142,6 +269,7 @@ td{
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	<script>
 	</script>
 	
